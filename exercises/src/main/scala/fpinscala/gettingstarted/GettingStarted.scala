@@ -164,8 +164,6 @@ object PolymorphicFunctions {
   // that they only have one implementation! Here's an example:
 
   // Exercise 3: Implement `partial1`.
-
-  def partial1[A, B, C](a: A, f: (A, B) => C): B => C = (b: B) => f(a, b)
   def partial1[A, B, C](a: A, f: (A, B) => C): B => C = b => f(a,b)
 
   // Exercise 4: Implement `curry`.
